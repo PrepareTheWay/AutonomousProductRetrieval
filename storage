@@ -1,0 +1,8 @@
+  def read_list(picklist_file):
+            with open(picklist_file,'r') as InFile:
+                data = InFile.readlines()
+                newlist = [line.strip() for line in data]
+                picklist.box_location = newlist[0]
+                picklist.barcode = newlist[1]
+                picklist.fulfillment_area = newlist[2]
+                print(f"Your picklist is: {picklist.box_location}, {picklist.barcode}, {picklist.fulfillment_area}")
