@@ -4,24 +4,12 @@ Anderson Nguyen | nguye4av | 27 Oct 2023 | 2:04 pm
 
 Subtask 1
 
-'''
-
-import time
-from pybricks.hubs import EV3Brick
-from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
-                                 InfraredSensor, UltrasonicSensor, GyroSensor)
-from pybricks.parameters import Port, Stop, Direction, Button, Color
-from pybricks.tools import wait, StopWatch, DataLog
-from pybricks.robotics import DriveBase
-from pybricks.media.ev3dev import SoundFile, ImageFile
+def pickup_left()
+def pickup_right()
+def scan_left()
+def scan_right()
 
 
-# Create your objects here.
-ev3 = EV3Brick()
-left_motor = Motor(Port.A)
-right_motor = Motor(Port.D)
-center_motor = Motor(Port.C)
-robot = DriveBase(left_motor, right_motor, wheel_diameter=70, axle_track=132)
 
 
 # robot.turn(360)
