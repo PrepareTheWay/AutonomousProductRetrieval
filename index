@@ -1,0 +1,85 @@
+#!/usr/bin/env pybricks-micropython
+import time
+from pybricks.hubs import EV3Brick
+from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
+                                 InfraredSensor, UltrasonicSensor, GyroSensor)
+from pybricks.parameters import Port, Stop, Direction, Button, Color
+from pybricks.tools import wait, StopWatch, DataLog
+from pybricks.robotics import DriveBase
+from pybricks.media.ev3dev import SoundFile, ImageFile
+
+
+# Create your objects here.
+ev3 = EV3Brick()
+left_motor = Motor(Port.A)
+right_motor = Motor(Port.D)
+center_motor = Motor(Port.C)
+robot = DriveBase(left_motor, right_motor, wheel_diameter=70, axle_track=130)
+
+# Class Methods
+
+# See https://pybricks.com/ev3-micropython/robotics.html 
+class DriveBase(left_motor, right_motor, wheel_diameter, axle_track):
+    # wheel_diameter (dimension: mm) – Diameter of the wheels.
+    # axle_track (dimension: mm) – Distance between the points where both wheels touch the ground.
+    
+    def straight(distance)
+    # move straight for a certain distance in mm
+    
+    def turn(angle)
+    # turn in place for a given angle and then stops
+    
+    def settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
+    # configures the speed used by straight() and turn()
+    # straight_speed: speed of straight movement mm/s
+    # straight_acceleration: acceleration of straight movement mm/s^2
+    # turn_rate: rotational speed deg/s
+    # turn_acceleration: angular acceleration and decceleration
+    
+    def drive(drive_speed,turn_rate)
+    # drive_speed mm/s
+    # turn_rate deg/s
+
+    def stop()
+    # call stop() to use motors individually... drive base is still actively holding motors in place
+    
+    def distance()
+    # returns measured distance traveled since last reset (mm)
+    
+    def angle()
+    # returns the rotation angle from the drivebase (deg)
+    
+    def state()
+    # returns the distance(), drive_speed, angle(), and turn_rate
+    
+    def reset()
+    # resets the measured distance() and angle() values to 0
+
+# See https://pybricks.com/ev3-micropython/media.html
+class Sound:
+    def KUNG_FU():
+    # Kung Fu sound effect
+    
+    def FANFARE():
+    # Trumpet fanfare sound effect
+    
+    def HORN_2():
+    # Car horn sound effect
+    
+    def T_REX_ROAR():
+    
+    def ZERO():
+    def ONE():
+    
+    def CONFIRM():
+    # Nice little chime
+    
+    def READY():
+    # Start chime
+
+class Font
+
+class Image(source, sub=True):
+    
+
+
