@@ -9,7 +9,8 @@ def pickup_right()
 def scan_left()
 def scan_right()
 
-
+if box_location == B2_1
+end coordinates = (x = 10, y = 14)
 
 
 # robot.turn(360)
